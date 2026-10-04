@@ -11,7 +11,6 @@ import dev.rosewood.roseloot.loot.item.component.common.stable.BundleContentsCom
 import dev.rosewood.roseloot.loot.item.component.common.stable.CanBreakComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.CanPlaceOnComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.ChargedProjectilesComponent;
-import dev.rosewood.roseloot.loot.item.component.common.stable.ConsumableComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.ContainerComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.ContainerLootComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.CustomModelDataComponent;
@@ -35,7 +34,6 @@ import dev.rosewood.roseloot.loot.item.component.common.stable.JukeboxPlayableCo
 import dev.rosewood.roseloot.loot.item.component.common.stable.KineticWeaponComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.LodestoneTrackerComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.LoreComponent;
-import dev.rosewood.roseloot.loot.item.component.common.stable.MapColorComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.MapDecorationsComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.MapIdComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.MapPostProcessingComponent;
@@ -56,7 +54,6 @@ import dev.rosewood.roseloot.loot.item.component.common.stable.RepairCostCompone
 import dev.rosewood.roseloot.loot.item.component.common.stable.RepairableComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.StoredEnchantmentsComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.SuspiciousStewEffectsComponent;
-import dev.rosewood.roseloot.loot.item.component.common.stable.SwingAnimationComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.ToolComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.TooltipDisplayComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.TooltipStyleComponent;

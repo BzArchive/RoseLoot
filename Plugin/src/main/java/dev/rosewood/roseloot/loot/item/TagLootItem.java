@@ -22,6 +22,9 @@ public class TagLootItem extends ItemLootItem {
     @Override
     protected Optional<ItemStack> resolveItem(LootContext context) {
         String tagString = this.item.get(context);
+        if (tagString.startsWith("#"))
+            tagString = tagString.substring(1);
+
         NamespacedKey namespacedKey = NamespacedKey.fromString(tagString);
         if (namespacedKey == null) {
             this.logFailToResolveMessage(tagString);

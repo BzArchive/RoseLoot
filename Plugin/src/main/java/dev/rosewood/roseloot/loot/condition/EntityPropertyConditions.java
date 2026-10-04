@@ -183,7 +183,7 @@ public class EntityPropertyConditions {
         registerBoolean(IronGolem.class, "player-created", IronGolem::isPlayerCreated);
         registerMaterial(Llama.class, "decor", x -> x.getInventory().getDecor() == null ? null : x.getInventory().getDecor().getType(), true, true);
         registerEnum(Llama.class, "color", Llama::getColor, Llama.Color.class);
-        registerInt(MagmaCube.class, "size", MagmaCube::getSize);
+        registerEnum(MagmaCube.class, "org.bukkit.entity.MagmaCube", "variant", x -> getReturnValueReflectively(MagmaCube.class, "org.bukkit.entity.MagmaCube", x, int.class, "getSize"), int.class); // AbstractCubeMob changes
         registerEnum(MushroomCow.class, "variant", MushroomCow::getVariant, MushroomCow.Variant.class);
         registerEnum(Panda.class, "main-gene", Panda::getMainGene, Panda.Gene.class);
         registerEnum(Panda.class, "hidden-gene", Panda::getHiddenGene, Panda.Gene.class);
@@ -199,7 +199,7 @@ public class EntityPropertyConditions {
         registerEnum(Rabbit.class, "type", Rabbit::getRabbitType, Rabbit.Type.class);
         registerBoolean(Sheep.class, "sheared", CompatibilityAdapter.getShearedHandler()::isSheared);
         registerEnum(Sheep.class, "color", Sheep::getColor, DyeColor.class);
-        registerInt(Slime.class, "org.bukkit.entity.Slime", "size", Slime::getSize); // More Commodore rewrites
+        registerEnum(Slime.class, "org.bukkit.entity.Slime", "variant", x -> getReturnValueReflectively(Slime.class, "org.bukkit.entity.Slime", x, int.class, "getSize"), int.class); // AbstractCubeMob changes
         registerBoolean(Snowman.class, "no-pumpkin", Snowman::isDerp);
         registerBoolean(Strider.class, "shivering", Strider::isShivering);
         registerMaterial(TraderLlama.class, "decor", x -> x.getInventory().getDecor() == null ? null : x.getInventory().getDecor().getType(), true, true);

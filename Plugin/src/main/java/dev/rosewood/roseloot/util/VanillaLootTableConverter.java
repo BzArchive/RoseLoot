@@ -60,11 +60,20 @@ public final class VanillaLootTableConverter {
                 continue;
 
             String path = lootTables.getKey().getKey();
-            handleVanilla(vanillaDirectory, path);
+            try {
+                handleVanilla(vanillaDirectory, path);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
 
-        for (Material material : Material.values())
-            handleVanilla(vanillaDirectory, "blocks/" + material.name().toLowerCase());
+        for (Material material : Material.values()) {
+            try {
+                handleVanilla(vanillaDirectory, "blocks/" + material.name().toLowerCase());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public static void convertDirectory(File directory, File destination) {
@@ -475,7 +484,13 @@ public final class VanillaLootTableConverter {
                     writer.write("0:");
                     writer.increaseIndentation();
                     writer.write("type: tag");
-                    writer.write("tag: " + trimNamespace(entry.get("name").getAsString()));
+                    if (entry.has("name")) {
+                        writer.write("tag: '" + trimNamespace(entry.get("name").getAsString()) + "'");
+                    } else if (entry.has("items")) {
+                        writer.write("tag: '" + trimNamespace(entry.get("items").getAsString()) + "'");
+                    } else {
+                        RoseLoot.getInstance().getLogger().warning("Unhandled tag entry type: " + path);
+                    }
                     writeAmountModifiers(path, writer, entry);
                     writeItemFunctions(path, writer, entry);
                     writer.decreaseIndentation();

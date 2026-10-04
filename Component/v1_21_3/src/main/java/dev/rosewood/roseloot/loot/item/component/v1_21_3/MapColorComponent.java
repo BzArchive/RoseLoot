@@ -1,4 +1,4 @@
-package dev.rosewood.roseloot.loot.item.component.common.stable;
+package dev.rosewood.roseloot.loot.item.component.v1_21_3;
 
 import dev.rosewood.roseloot.loot.context.LootContext;
 import dev.rosewood.roseloot.loot.item.component.LootItemComponent;

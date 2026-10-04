@@ -37,6 +37,8 @@ public class ComponentMappings {
                     name = "v26_1_1";
                 } else if (major == 26 && minor == 2) {
                     name = "v26_2_1";
+                } else if (major == 26 && minor == 3) {
+                    name = "v26_3_1";
                 } else {
                     RoseLoot.getInstance().getLogger().warning("Components are not available for this version");
                 }

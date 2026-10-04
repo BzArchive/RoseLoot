@@ -6,7 +6,6 @@ import dev.rosewood.roseloot.loot.item.component.common.stable.BannerPatternsCom
 import dev.rosewood.roseloot.loot.item.component.common.stable.BaseColorComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.BundleContentsComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.ChargedProjectilesComponent;
-import dev.rosewood.roseloot.loot.item.component.common.stable.ConsumableComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.ContainerComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.ContainerLootComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.CustomModelDataComponent;
@@ -25,7 +24,6 @@ import dev.rosewood.roseloot.loot.item.component.common.stable.ItemModelComponen
 import dev.rosewood.roseloot.loot.item.component.common.stable.ItemNameComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.LodestoneTrackerComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.LoreComponent;
-import dev.rosewood.roseloot.loot.item.component.common.stable.MapColorComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.MapDecorationsComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.MapIdComponent;
 import dev.rosewood.roseloot.loot.item.component.common.stable.MapPostProcessingComponent;
